@@ -15,7 +15,6 @@ int main()
     cout << boolalpha << isPalindrome(121) << endl;
     cout << boolalpha << isPalindrome(-121) << endl;
     cout << boolalpha << isPalindrome(10) << endl;
-
     return 0;
 }
 
