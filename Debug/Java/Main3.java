@@ -1,3 +1,5 @@
+// Find the maximum in the array without using max function.
+
 package Debug.Java;
 
 public class Main3 {
