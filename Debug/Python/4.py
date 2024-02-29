@@ -8,7 +8,6 @@ def count_vowels(string):
             vowel_counts[char] += vowel_counts
     return vowel_counts
 
-# Example usage:
 input_string = "Hello World"
 vowel_counts = count_vowels(input_string)
 print("Vowel counts:", vowel_counts)
