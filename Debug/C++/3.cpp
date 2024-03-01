@@ -4,17 +4,21 @@
 #include <vector>
 using namespace std;
 
-int findMax(vector<int>& arr) {
-    int maxElement = arr[0];
-    for (int i = 1; i < arr.size(); i++) {
-        if (arr[i] < maxElement) {
+int findMax(vector<int> &arr)
+{
+    int maxElement = arr[1];
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (arr[i] > maxElement)
+        {
             maxElement = arr[i];
         }
     }
     return maxElement;
 }
 
-int main() {
+int main()
+{
     vector<int> array;
     cout << "Maximum element in the array: " << findMax(array) << endl;
 

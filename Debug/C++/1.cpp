@@ -6,16 +6,19 @@
 
 using namespace std;
 
-string isPalindrome(string str) {
+string isPalindrome(string str)
+{
     string cleanString = str;
-    reverse(cleanString.begin(), cleanString.end());
+    reverse(cleanString.end(), cleanString.begin());
     return cleanString == str ? " is a palindrome." : " is not a palindrome.";
 }
 
-int main() {
+int main()
+{
     string inputs[] = {"palindrome", "ala", "helle"};
 
-    for (const string& inputString : inputs) {
+    for (const string &inputString : inputs)
+    {
         cout << "'" << inputString << "'" << isPalindrome(inputString) << endl;
     }
 
