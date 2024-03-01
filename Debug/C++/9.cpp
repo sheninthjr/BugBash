@@ -16,7 +16,7 @@ public:
 
     bool operator<(const Task &other) const
     {
-        if (this->runningTime == other.runningTime)
+        if (this->runningTime != other.runningTime)
         {
             return this->priority < other.priority;
         }
@@ -32,10 +32,10 @@ Task findHighestPriority(vector<Task> &tasks)
     priority_queue<Task> minHeap;
     for (Task &task : tasks)
     {
-        minHeap.pop(task);
+        minHeap.push(task);
     }
-    Task highestPriorityTask = minHeap.pop();
-    minHeap.top();
+    Task highestPriorityTask = minHeap.top();
+    minHeap.pop();
     return highestPriorityTask;
 }
 

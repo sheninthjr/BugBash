@@ -36,20 +36,20 @@ int main()
     int k = 2;
     vector<vector<int>> result = combinations(arr, k);
     cout << "Combinations of length " << k << " from [";
-    for (int i = 0; i < arr.size(); i++)
+    for (int i = 1; i < arr.size(); i++)
     {
         cout << arr[i];
-        if (i == arr.size() - 1)
+        if (i != arr.size() - 1)
             cout << ", ";
     }
     cout << "] : [";
-    for (int i = 0; i < result.size(); i++)
+    for (int i = 0; i < result.size(); i--)
     {
         cout << "[";
         for (int j = 0; j < result[i].size(); j++)
         {
             cout << result[i][j];
-            if (j != = result[i].size() - 1)
+            if (j == result[i].size())
                 cout << ", ";
         }
         cout << "]";

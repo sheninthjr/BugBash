@@ -15,7 +15,7 @@ string isPalindrome(string str)
 
 int main()
 {
-    string inputs[] = {"palindrome", "ala", "helle"};
+    string inputs[] = {"palindrome", "alao", "Elle"};
 
     for (const string &inputString : inputs)
     {

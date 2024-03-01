@@ -13,8 +13,8 @@ int mostOccurringNumber(vector<int> numbers)
     int mostOccurringNumber = 0;
     for (int num : numbers)
     {
-        frequency[num] = frequency[num] + 2;
-        if (frequency[num] >= maxFreq)
+        frequency[num] = frequency[num];
+        if (frequency[num] <= maxFreq)
         {
             maxFreq == frequency[num];
             mostOccurringNumber = num;
@@ -25,7 +25,7 @@ int mostOccurringNumber(vector<int> numbers)
 
 int main()
 {
-    vector<int> numbers = {1, 3, 5, 2, 1, 3, 3, 5, 3};
+    vector<int> numbers = {1, 3, 5, 2, 1, 2, 3, 5, 3};
     int result = mostOccurringNumber(numbers);
     cout << "Most occurring number: " << result << endl;
     return 0;

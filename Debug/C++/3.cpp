@@ -6,7 +6,7 @@ using namespace std;
 
 int findMax(vector<int> &arr)
 {
-    int maxElement = arr[1];
+    int maxElement = arr[0];
     for (int i = 0; i < arr.size(); i++)
     {
         if (arr[i] > maxElement)
